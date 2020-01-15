@@ -1,0 +1,156 @@
+    @import "compass/reset";
+    a {
+        text-decoration: none;
+    }
+    
+    // 顶部
+    @import "_top";
+    // 头部
+    @import "_header";
+    // 导航
+    @import "_nav";
+    #main {
+        width: 1200px;
+        height: 606px;
+        background: oldlace;
+        margin: 0 auto;
+        position: relative;
+        .pd_title {
+            height: 50px;
+            width: 100%;
+            // background: powderblue;
+            line-height: 50px;
+            a {
+                font-size: 13px;
+                color: #333;
+            }
+            .pd_tit {
+                width: 600px;
+                display: inline-block;
+            }
+        }
+        .pd_text {
+            width: 1200px;
+            height: 536px;
+            float: left;
+            position: relative;
+            .b_img {
+                width: 420px;
+                height: 420px;
+                box-sizing: border-box;
+                border: 1px solid #e5e5e5;
+                float: left;
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                #sf {
+                    width: 200px;
+                    height: 200px;
+                    background: orange;
+                    opacity: 0.3;
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    visibility: hidden;
+                    cursor: move;
+                    z-index: 999;
+                }
+            }
+            #bf {
+                width: 420px;
+                height: 420px;
+                float: left;
+                position: absolute;
+                top: 0;
+                left: 420px;
+                margin-left: 10px;
+                visibility: hidden;
+                overflow: hidden;
+                z-index: 9999;
+                #bpic {
+                    width: 800px;
+                    height: 800px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+            .items {
+                position: relative;
+                width: 420px;
+                height: 60px;
+                margin-top: 13px;
+                .pd_item {
+                    float: left;
+                    overflow: hidden;
+                    // width: 380px;
+                    height: 60px;
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    #list {
+                        float: left;
+                        display: block;
+                        width: 60px;
+                        height: 60px;
+                        box-sizing: border-box;
+                        // border: 1px solid #e5e5e5;
+                        margin-right: 20px;
+                        img {
+                            width: 56px;
+                            height: 56px;
+                            padding: 1px;
+                            border: 1px solid #e7e7e7;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .pd_data {
+            width: 759px;
+            height: 396px;
+            margin-left: 20px;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            h3 {
+                overflow: hidden;
+                color: #333;
+                font-size: 18px;
+                width: 100%;
+                font-weight: bold;
+            }
+            .pd_price {
+                width: 100%;
+                height: 85px;
+                padding: 15px 20px;
+                line-height: 50px;
+                span {
+                    font-size: 12px;
+                    em {
+                        font-size: 30px;
+                        color: #EE394B;
+                    }
+                }
+            }
+            .pd_cat {
+                width: 600px;
+                height: 100px;
+                // background: paleturquoise;
+                margin: 100px 0 0;
+                box-sizing: border-box;
+                padding: 20px 30px;
+                input {
+                    width: 100px;
+                    height: 30px;
+                    margin: 0 20px 0;
+                }
+                button {
+                    background: red;
+                    width: 180px;
+                    height: 40px;
+                }
+            }
+        }
+    }

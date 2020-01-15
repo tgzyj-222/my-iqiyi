@@ -1,0 +1,166 @@
+// product
+#product {
+    width: 1200px;
+    height: 605px;
+    margin: 0 auto;
+    padding: 25px 0 0;
+    // background: yellow;
+    #new {
+        height: 45px;
+        .new_left {
+            width: 1140px;
+            height: 36px;
+            float: left;
+            .span1 {
+                width: 36px;
+                height: 36px;
+                background: url(http://pic5.iqiyipic.com/common/20160907/ae2dd09618d545a595cc8c97be29a45d.png);
+            }
+            .sapn2 {
+                font-size: 28px;
+                color: #333;
+                margin: 0 10px;
+            }
+            .sapn3 {
+                color: #c2c2c2;
+                margin: 0 0 4px;
+                padding: 0 10px;
+                font-size: 16px;
+                border-left: 1px solid #c2c2c2;
+            }
+        }
+        .new_right {
+            width: 60px;
+            height: 36px;
+            float: right;
+            a {
+                color: #666;
+                margin: 0 10px 0 0;
+                font-size: 14px;
+            }
+        }
+    }
+    #product_list {
+        width: 1200px;
+        height: 515px;
+        // background: papayawhip;
+        .context {
+            width: 100%;
+            height: 100%;
+            .product_item {
+                width: 100%;
+                height: 100%;
+                display: block;
+                box-sizing: border-box;
+                border-right: 1px solid #e5e5e5;
+                border-bottom: 1px solid #e5e5e5;
+                // background: palegreen;
+                .col {
+                    width: 239px;
+                    // height: 256px;
+                    display: block;
+                    box-sizing: border-box;
+                    float: left;
+                    border-top: 1px solid #e5e5e5;
+                    border-left: 1px solid #e5e5e5;
+                    .productinfo {
+                        width: 239px;
+                        // height: 100%;
+                        display: block;
+                        position: relative;
+                        cursor: pointer;
+                        a {
+                            display: block;
+                            width: 239px;
+                            // height: 155px;
+                            text-align: center;
+                            overflow: hidden;
+                            img {
+                                width: 140px;
+                                height: 140px;
+                                vertical-align: middle;
+                                margin-top: 15px;
+                                transition: all 500ms ease;
+                            }
+                            img:hover {
+                                transform: scale(1.1, 1.1);
+                            }
+                        }
+                        .product_tcho {
+                            cursor: pointer;
+                            height: 86px;
+                            width: 211px;
+                            margin-top: 15px;
+                            margin-left: 14px;
+                            margin-right: 14px;
+                            p {
+                                display: block;
+                                // margin-block-start: 1em;
+                                // margin-block-end: 1em;
+                                // margin-inline-start: 0px;
+                                // margin-inline-end: 0px;
+                            }
+                            .producttitle {
+                                font-size: 14px;
+                                line-height: 22px;
+                                height: 22px;
+                            }
+                            .subtitle {
+                                font-size: 12px;
+                                color: #999;
+                                line-height: 20px;
+                                height: 20px;
+                                .tospan1 {
+                                    margin-right: 5px;
+                                    display: inline-block;
+                                    height: 18px;
+                                    line-height: 18px;
+                                    position: relative;
+                                    font-size: 12px;
+                                    color: #fff;
+                                    background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexproductStatus.png) repeat-x;
+                                    background-position: 0 0;
+                                    border-radius: 3px;
+                                    padding-right: 3px;
+                                    em {
+                                        display: inline-block;
+                                        margin-left: 10px;
+                                        height: 18px;
+                                        line-height: 18px;
+                                        background-color: #ee394b;
+                                        border-radius: 3px;
+                                        padding-right: 3px;
+                                        width: 52px;
+                                        word-break: break-all;
+                                        text-overflow: clip;
+                                        overflow: hidden;
+                                        vertical-align: bottom;
+                                    }
+                                }
+                                .tospan2 {
+                                    color: #999;
+                                    height: 16px;
+                                    width: 98px;
+                                    text-align: center;
+                                }
+                            }
+                            .productdesc {
+                                height: 44px;
+                                line-height: 44px;
+                                .tospan3 {
+                                    font-size: 20px;
+                                    color: #ee394b;
+                                }
+                                .tospan4 {
+                                    font-size: 12px;
+                                    color: #999;
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

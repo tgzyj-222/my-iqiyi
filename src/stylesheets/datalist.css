@@ -1,0 +1,437 @@
+/* line 5, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, ../sass/datalist.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 2, ../sass/_top.scss */
+#top {
+  height: 32px;
+  width: 100%;
+  background: #eee;
+}
+/* line 6, ../sass/_top.scss */
+#top .top_nav {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  line-height: 32px;
+  color: #999;
+  font-size: 12px;
+}
+/* line 13, ../sass/_top.scss */
+#top .top_nav ._navleft {
+  float: left;
+}
+/* line 15, ../sass/_top.scss */
+#top .top_nav ._navleft span {
+  margin: 0 20px 0 0;
+}
+/* line 19, ../sass/_top.scss */
+#top .top_nav ._navright {
+  float: right;
+}
+/* line 21, ../sass/_top.scss */
+#top .top_nav ._navright span {
+  margin: 0 0 0 20px;
+}
+
+/* line 1, ../sass/_header.scss */
+#header {
+  width: 100%;
+  height: 97px;
+  margin-bottom: 20px;
+}
+/* line 6, ../sass/_header.scss */
+#header .header_main {
+  width: 1200px;
+  height: 97px;
+  margin: 0 auto;
+}
+/* line 11, ../sass/_header.scss */
+#header .header_main .logo {
+  float: left;
+  margin-top: 30px;
+}
+/* line 15, ../sass/_header.scss */
+#header .header_main .logo img {
+  width: 216px;
+  height: 60px;
+}
+/* line 20, ../sass/_header.scss */
+#header .header_main .search {
+  height: 60px;
+  padding-left: 154px;
+  float: left;
+  margin: 37px 0 0;
+}
+/* line 27, ../sass/_header.scss */
+#header .header_main .search .search_inp {
+  width: 510px;
+  border: 1px solid #ee394b;
+  height: 34px;
+  position: relative;
+  z-index: 3000;
+  float: left;
+}
+/* line 34, ../sass/_header.scss */
+#header .header_main .search .search_inp .text {
+  width: 400px;
+  border: 0;
+  background: #fff;
+  font-size: 12px;
+  padding-left: 10px;
+  color: #999;
+  height: 14px;
+  line-height: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: 0;
+  float: left;
+}
+/* line 48, ../sass/_header.scss */
+#header .header_main .search .search_inp .btn {
+  width: 100px;
+  color: #fff;
+  border: 0;
+  background: #eb3b4a;
+  font-size: 20px;
+  height: 34px;
+  margin: 0;
+  float: right;
+  outline: 0;
+}
+/* line 60, ../sass/_header.scss */
+#header .header_main .search .search_nav {
+  width: 518px;
+  height: 24px;
+  color: #c7c7c7;
+  margin-left: -8px;
+}
+/* line 65, ../sass/_header.scss */
+#header .header_main .search .search_nav li {
+  float: left;
+  height: 24px;
+}
+/* line 68, ../sass/_header.scss */
+#header .header_main .search .search_nav li a {
+  font-size: 12px;
+  padding: 0 10px;
+  line-height: 24px;
+  border-right: 1px solid #c7c7c7;
+}
+/* line 74, ../sass/_header.scss */
+#header .header_main .search .search_nav li a:hover {
+  color: #ee394b;
+}
+/* line 80, ../sass/_header.scss */
+#header .header_main .header_right {
+  width: 209px;
+  height: 50px;
+  float: right;
+  margin-top: 30px;
+}
+/* line 86, ../sass/_header.scss */
+#header .header_main .header_right ul li {
+  width: 160px;
+  overflow: hidden;
+}
+/* line 89, ../sass/_header.scss */
+#header .header_main .header_right ul li a {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+/* line 93, ../sass/_header.scss */
+#header .header_main .header_right ul li a img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+/* line 99, ../sass/_header.scss */
+#header .header_main .header_right ul li p {
+  float: left;
+}
+/* line 102, ../sass/_header.scss */
+#header .header_main .header_right ul li p b {
+  width: 100px;
+  height: 20px;
+  color: #999;
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+}
+/* line 110, ../sass/_header.scss */
+#header .header_main .header_right ul li p span {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  color: #666;
+  font-size: 12px;
+  line-height: 20px;
+}
+/* line 122, ../sass/_header.scss */
+#header .header_main .arrow {
+  float: right;
+  margin: -19px 0 0 10px;
+  width: 39px;
+  height: 19px;
+  background: url(https://pic0.iqiyipic.com/common/20150714/arrow2.gif) no-repeat;
+}
+
+/* line 2, ../sass/_nav.scss */
+#nav {
+  width: 100%;
+  height: 40px;
+  background: #EE394B;
+}
+/* line 6, ../sass/_nav.scss */
+#nav .nav_list {
+  width: 1200px;
+  margin: auto;
+}
+/* line 9, ../sass/_nav.scss */
+#nav .nav_list li {
+  float: left;
+  height: 40px;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+/* line 14, ../sass/_nav.scss */
+#nav .nav_list li a {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 40px;
+}
+/* line 20, ../sass/_nav.scss */
+#nav .nav_list li:hover {
+  border-bottom: 2px solid orange;
+}
+
+/* line 12, ../sass/datalist.scss */
+#main {
+  width: 1200px;
+  height: 606px;
+  background: oldlace;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 18, ../sass/datalist.scss */
+#main .pd_title {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+}
+/* line 23, ../sass/datalist.scss */
+#main .pd_title a {
+  font-size: 13px;
+  color: #333;
+}
+/* line 27, ../sass/datalist.scss */
+#main .pd_title .pd_tit {
+  width: 600px;
+  display: inline-block;
+}
+/* line 32, ../sass/datalist.scss */
+#main .pd_text {
+  width: 1200px;
+  height: 536px;
+  float: left;
+  position: relative;
+}
+/* line 37, ../sass/datalist.scss */
+#main .pd_text .b_img {
+  width: 420px;
+  height: 420px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  float: left;
+  position: relative;
+}
+/* line 44, ../sass/datalist.scss */
+#main .pd_text .b_img img {
+  width: 100%;
+}
+/* line 47, ../sass/datalist.scss */
+#main .pd_text .b_img #sf {
+  width: 200px;
+  height: 200px;
+  background: orange;
+  opacity: 0.3;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  visibility: hidden;
+  cursor: move;
+  z-index: 999;
+}
+/* line 60, ../sass/datalist.scss */
+#main .pd_text #bf {
+  width: 420px;
+  height: 420px;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 420px;
+  margin-left: 10px;
+  visibility: hidden;
+  overflow: hidden;
+  z-index: 9999;
+}
+/* line 71, ../sass/datalist.scss */
+#main .pd_text #bf #bpic {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 79, ../sass/datalist.scss */
+#main .pd_text .items {
+  position: relative;
+  width: 420px;
+  height: 60px;
+  margin-top: 13px;
+}
+/* line 84, ../sass/datalist.scss */
+#main .pd_text .items .pd_item {
+  float: left;
+  overflow: hidden;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+/* line 91, ../sass/datalist.scss */
+#main .pd_text .items .pd_item #list {
+  float: left;
+  display: block;
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+/* line 99, ../sass/datalist.scss */
+#main .pd_text .items .pd_item #list img {
+  width: 56px;
+  height: 56px;
+  padding: 1px;
+  border: 1px solid #e7e7e7;
+  cursor: pointer;
+}
+/* line 110, ../sass/datalist.scss */
+#main .pd_data {
+  width: 759px;
+  height: 396px;
+  margin-left: 20px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+/* line 117, ../sass/datalist.scss */
+#main .pd_data h3 {
+  overflow: hidden;
+  color: #333;
+  font-size: 18px;
+  width: 100%;
+  font-weight: bold;
+}
+/* line 124, ../sass/datalist.scss */
+#main .pd_data .pd_price {
+  width: 100%;
+  height: 85px;
+  padding: 15px 20px;
+  line-height: 50px;
+}
+/* line 129, ../sass/datalist.scss */
+#main .pd_data .pd_price span {
+  font-size: 12px;
+}
+/* line 131, ../sass/datalist.scss */
+#main .pd_data .pd_price span em {
+  font-size: 30px;
+  color: #EE394B;
+}
+/* line 137, ../sass/datalist.scss */
+#main .pd_data .pd_cat {
+  width: 600px;
+  height: 100px;
+  margin: 100px 0 0;
+  box-sizing: border-box;
+  padding: 20px 30px;
+}
+/* line 144, ../sass/datalist.scss */
+#main .pd_data .pd_cat input {
+  width: 100px;
+  height: 30px;
+  margin: 0 20px 0;
+}
+/* line 149, ../sass/datalist.scss */
+#main .pd_data .pd_cat button {
+  background: red;
+  width: 180px;
+  height: 40px;
+}

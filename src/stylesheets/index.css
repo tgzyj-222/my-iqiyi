@@ -1,0 +1,1152 @@
+/* line 5, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, ../sass/index.scss */
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 7, ../sass/index.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 2, ../sass/_top.scss */
+#top {
+  height: 32px;
+  width: 100%;
+  background: #eee;
+}
+/* line 6, ../sass/_top.scss */
+#top .top_nav {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  line-height: 32px;
+  color: #999;
+  font-size: 12px;
+}
+/* line 13, ../sass/_top.scss */
+#top .top_nav ._navleft {
+  float: left;
+}
+/* line 15, ../sass/_top.scss */
+#top .top_nav ._navleft span {
+  margin: 0 20px 0 0;
+}
+/* line 19, ../sass/_top.scss */
+#top .top_nav ._navright {
+  float: right;
+}
+/* line 21, ../sass/_top.scss */
+#top .top_nav ._navright span {
+  margin: 0 0 0 20px;
+}
+
+/* line 1, ../sass/_header.scss */
+#header {
+  width: 100%;
+  height: 97px;
+  margin-bottom: 20px;
+}
+/* line 6, ../sass/_header.scss */
+#header .header_main {
+  width: 1200px;
+  height: 97px;
+  margin: 0 auto;
+}
+/* line 11, ../sass/_header.scss */
+#header .header_main .logo {
+  float: left;
+  margin-top: 30px;
+}
+/* line 15, ../sass/_header.scss */
+#header .header_main .logo img {
+  width: 216px;
+  height: 60px;
+}
+/* line 20, ../sass/_header.scss */
+#header .header_main .search {
+  height: 60px;
+  padding-left: 154px;
+  float: left;
+  margin: 37px 0 0;
+}
+/* line 27, ../sass/_header.scss */
+#header .header_main .search .search_inp {
+  width: 510px;
+  border: 1px solid #ee394b;
+  height: 34px;
+  position: relative;
+  z-index: 3000;
+  float: left;
+}
+/* line 34, ../sass/_header.scss */
+#header .header_main .search .search_inp .text {
+  width: 400px;
+  border: 0;
+  background: #fff;
+  font-size: 12px;
+  padding-left: 10px;
+  color: #999;
+  height: 14px;
+  line-height: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: 0;
+  float: left;
+}
+/* line 48, ../sass/_header.scss */
+#header .header_main .search .search_inp .btn {
+  width: 100px;
+  color: #fff;
+  border: 0;
+  background: #eb3b4a;
+  font-size: 20px;
+  height: 34px;
+  margin: 0;
+  float: right;
+  outline: 0;
+}
+/* line 60, ../sass/_header.scss */
+#header .header_main .search .search_nav {
+  width: 518px;
+  height: 24px;
+  color: #c7c7c7;
+  margin-left: -8px;
+}
+/* line 65, ../sass/_header.scss */
+#header .header_main .search .search_nav li {
+  float: left;
+  height: 24px;
+}
+/* line 68, ../sass/_header.scss */
+#header .header_main .search .search_nav li a {
+  font-size: 12px;
+  padding: 0 10px;
+  line-height: 24px;
+  border-right: 1px solid #c7c7c7;
+}
+/* line 74, ../sass/_header.scss */
+#header .header_main .search .search_nav li a:hover {
+  color: #ee394b;
+}
+/* line 80, ../sass/_header.scss */
+#header .header_main .header_right {
+  width: 209px;
+  height: 50px;
+  float: right;
+  margin-top: 30px;
+}
+/* line 86, ../sass/_header.scss */
+#header .header_main .header_right ul li {
+  width: 160px;
+  overflow: hidden;
+}
+/* line 89, ../sass/_header.scss */
+#header .header_main .header_right ul li a {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+/* line 93, ../sass/_header.scss */
+#header .header_main .header_right ul li a img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+/* line 99, ../sass/_header.scss */
+#header .header_main .header_right ul li p {
+  float: left;
+}
+/* line 102, ../sass/_header.scss */
+#header .header_main .header_right ul li p b {
+  width: 100px;
+  height: 20px;
+  color: #999;
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+}
+/* line 110, ../sass/_header.scss */
+#header .header_main .header_right ul li p span {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  color: #666;
+  font-size: 12px;
+  line-height: 20px;
+}
+/* line 122, ../sass/_header.scss */
+#header .header_main .arrow {
+  float: right;
+  margin: -19px 0 0 10px;
+  width: 39px;
+  height: 19px;
+  background: url(https://pic0.iqiyipic.com/common/20150714/arrow2.gif) no-repeat;
+}
+
+/* line 2, ../sass/_nav.scss */
+#nav {
+  width: 100%;
+  height: 40px;
+  background: #EE394B;
+}
+/* line 6, ../sass/_nav.scss */
+#nav .nav_list {
+  width: 1200px;
+  margin: auto;
+}
+/* line 9, ../sass/_nav.scss */
+#nav .nav_list li {
+  float: left;
+  height: 40px;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+/* line 14, ../sass/_nav.scss */
+#nav .nav_list li a {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 40px;
+}
+/* line 20, ../sass/_nav.scss */
+#nav .nav_list li:hover {
+  border-bottom: 2px solid orange;
+}
+
+/* line 1, ../sass/_banner.scss */
+#banner {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 7, ../sass/_banner.scss */
+#banner .piclist {
+  position: absolute;
+  left: 0px;
+  top: 0;
+}
+/* line 12, ../sass/_banner.scss */
+#banner .piclist li {
+  float: left;
+}
+/* line 14, ../sass/_banner.scss */
+#banner .piclist li img {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+/* line 21, ../sass/_banner.scss */
+#banner .btnlist {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  margin-left: -100px;
+}
+/* line 26, ../sass/_banner.scss */
+#banner .btnlist li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  background: white;
+  text-indent: -99999px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+/* line 37, ../sass/_banner.scss */
+#banner #left,
+#banner #right {
+  font-size: 64px;
+  color: #fff;
+  position: absolute;
+  top: 150px;
+  text-decoration: none;
+  display: none;
+}
+/* line 46, ../sass/_banner.scss */
+#banner #left {
+  left: 10px;
+}
+/* line 49, ../sass/_banner.scss */
+#banner #right {
+  right: 10px;
+}
+/* line 52, ../sass/_banner.scss */
+#banner .btnlist .current {
+  background: cyan;
+}
+
+/* line 20, ../sass/index.scss */
+#gg {
+  width: 100%;
+  height: 120px;
+  margin: 40px 0 0;
+}
+/* line 24, ../sass/index.scss */
+#gg .gg_show {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+/* line 28, ../sass/index.scss */
+#gg .gg_show img {
+  margin: 0 auto;
+}
+
+/* line 2, ../sass/_product.scss */
+#product {
+  width: 1200px;
+  height: 605px;
+  margin: 0 auto;
+  padding: 25px 0 0;
+}
+/* line 8, ../sass/_product.scss */
+#product #new {
+  height: 45px;
+}
+/* line 10, ../sass/_product.scss */
+#product #new .new_left {
+  width: 1140px;
+  height: 36px;
+  float: left;
+}
+/* line 14, ../sass/_product.scss */
+#product #new .new_left .span1 {
+  width: 36px;
+  height: 36px;
+  background: url(http://pic5.iqiyipic.com/common/20160907/ae2dd09618d545a595cc8c97be29a45d.png);
+}
+/* line 19, ../sass/_product.scss */
+#product #new .new_left .sapn2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0 10px;
+}
+/* line 24, ../sass/_product.scss */
+#product #new .new_left .sapn3 {
+  color: #c2c2c2;
+  margin: 0 0 4px;
+  padding: 0 10px;
+  font-size: 16px;
+  border-left: 1px solid #c2c2c2;
+}
+/* line 32, ../sass/_product.scss */
+#product #new .new_right {
+  width: 60px;
+  height: 36px;
+  float: right;
+}
+/* line 36, ../sass/_product.scss */
+#product #new .new_right a {
+  color: #666;
+  margin: 0 10px 0 0;
+  font-size: 14px;
+}
+/* line 43, ../sass/_product.scss */
+#product #product_list {
+  width: 1200px;
+  height: 515px;
+}
+/* line 47, ../sass/_product.scss */
+#product #product_list .context {
+  width: 100%;
+  height: 100%;
+}
+/* line 50, ../sass/_product.scss */
+#product #product_list .context .product_item {
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 58, ../sass/_product.scss */
+#product #product_list .context .product_item .col {
+  width: 239px;
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+}
+/* line 66, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo {
+  width: 239px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+/* line 72, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo a {
+  display: block;
+  width: 239px;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 78, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo a img {
+  width: 140px;
+  height: 140px;
+  vertical-align: middle;
+  margin-top: 15px;
+  transition: all 500ms ease;
+}
+/* line 85, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo a img:hover {
+  transform: scale(1.1, 1.1);
+}
+/* line 89, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo .product_tcho {
+  cursor: pointer;
+  height: 86px;
+  width: 211px;
+  margin-top: 15px;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+/* line 96, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo .product_tcho p {
+  display: block;
+}
+/* line 103, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo .product_tcho .producttitle {
+  font-size: 14px;
+  line-height: 22px;
+  height: 22px;
+}
+/* line 108, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo .product_tcho .subtitle {
+  font-size: 12px;
+  color: #999;
+  line-height: 20px;
+  height: 20px;
+}
+/* line 113, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo .product_tcho .subtitle .tospan1 {
+  margin-right: 5px;
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexproductStatus.png) repeat-x;
+  background-position: 0 0;
+  border-radius: 3px;
+  padding-right: 3px;
+}
+/* line 125, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo .product_tcho .subtitle .tospan1 em {
+  display: inline-block;
+  margin-left: 10px;
+  height: 18px;
+  line-height: 18px;
+  background-color: #ee394b;
+  border-radius: 3px;
+  padding-right: 3px;
+  width: 52px;
+  word-break: break-all;
+  text-overflow: clip;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+/* line 140, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo .product_tcho .subtitle .tospan2 {
+  color: #999;
+  height: 16px;
+  width: 98px;
+  text-align: center;
+}
+/* line 147, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo .product_tcho .productdesc {
+  height: 44px;
+  line-height: 44px;
+}
+/* line 150, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo .product_tcho .productdesc .tospan3 {
+  font-size: 20px;
+  color: #ee394b;
+}
+/* line 154, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo .product_tcho .productdesc .tospan4 {
+  font-size: 12px;
+  color: #999;
+  float: right;
+}
+
+/* line 2, ../sass/_shop.scss */
+#shop {
+  width: 1200px;
+  height: 3150px;
+  margin: 0 auto;
+  padding: 25px 0 0;
+}
+/* line 7, ../sass/_shop.scss */
+#shop #show_title {
+  height: 45px;
+}
+/* line 9, ../sass/_shop.scss */
+#shop #show_title .new_left {
+  width: 1200px;
+  height: 36px;
+}
+/* line 13, ../sass/_shop.scss */
+#shop #show_title .new_left .span1 {
+  width: 36px;
+  height: 36px;
+}
+/* line 17, ../sass/_shop.scss */
+#shop #show_title .new_left .sapn2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0 10px;
+}
+/* line 22, ../sass/_shop.scss */
+#shop #show_title .new_left .sapn3 {
+  color: #c2c2c2;
+  margin: 0 0 4px;
+  padding: 0 10px;
+  font-size: 16px;
+  border-left: 1px solid #c2c2c2;
+}
+/* line 31, ../sass/_shop.scss */
+#shop #show_left {
+  width: 840px;
+  float: left;
+}
+/* line 35, ../sass/_shop.scss */
+#shop #show_left .shop_list .shop_ti {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+  height: 292px;
+  display: block;
+  box-sizing: border-box;
+}
+/* line 43, ../sass/_shop.scss */
+#shop #show_left .shop_list .list_title {
+  width: 258px;
+  float: left;
+}
+/* line 46, ../sass/_shop.scss */
+#shop #show_left .shop_list .list_title .p1 {
+  width: 240px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin: 117px auto 0;
+}
+/* line 53, ../sass/_shop.scss */
+#shop #show_left .shop_list .list_title .p1 a {
+  color: #333;
+}
+/* line 57, ../sass/_shop.scss */
+#shop #show_left .shop_list .list_title .p2 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 14px;
+  height: 14px;
+  padding: 0 10px;
+}
+/* line 64, ../sass/_shop.scss */
+#shop #show_left .shop_list .list_title .p2 a {
+  color: #777;
+}
+/* line 67, ../sass/_shop.scss */
+#shop #show_left .shop_list .list_title .p2 a:hover {
+  color: red;
+}
+/* line 72, ../sass/_shop.scss */
+#shop #show_left .shop_list .shop_img {
+  width: 580px;
+  height: 100%;
+  float: left;
+}
+/* line 76, ../sass/_shop.scss */
+#shop #show_left .shop_list .shop_img img {
+  width: 100%;
+  transition: opacity 500ms ease-out;
+}
+/* line 82, ../sass/_shop.scss */
+#shop #show_left li:hover img {
+  opacity: 0.6;
+}
+/* line 86, ../sass/_shop.scss */
+#shop #show_right {
+  float: right;
+  width: 340px;
+  margin-bottom: 20px;
+}
+/* line 92, ../sass/_shop.scss */
+#shop #show_right .hot_list {
+  width: 100%;
+  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/nav_tint_redbg.png) no-repeat;
+  height: 50px;
+  line-height: 50px;
+}
+/* line 97, ../sass/_shop.scss */
+#shop #show_right .hot_list h1 {
+  font-size: 21px;
+  color: #333;
+}
+/* line 103, ../sass/_shop.scss */
+#shop .hotlist {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+  box-sizing: border-box;
+}
+/* line 109, ../sass/_shop.scss */
+#shop .hotlist li {
+  width: 100%;
+  height: 110px;
+}
+/* line 112, ../sass/_shop.scss */
+#shop .hotlist li .list_img {
+  width: 130px;
+  height: 110px;
+  float: left;
+  overflow: hidden;
+}
+/* line 117, ../sass/_shop.scss */
+#shop .hotlist li .list_img a {
+  color: #777;
+}
+/* line 119, ../sass/_shop.scss */
+#shop .hotlist li .list_img a img {
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+  transition: all 500ms ease;
+}
+/* line 125, ../sass/_shop.scss */
+#shop .hotlist li .list_img a img:hover {
+  transform: scale(1.1, 1.1);
+}
+/* line 130, ../sass/_shop.scss */
+#shop .hotlist li .shopinfo {
+  float: left;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  position: relative;
+  height: 110px;
+  width: 200px;
+}
+/* line 137, ../sass/_shop.scss */
+#shop .hotlist li .shopinfo .first {
+  width: 57px;
+  height: 20px;
+  margin-top: 14px;
+  margin-bottom: 10px;
+  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/hot_first.png) no-repeat;
+}
+/* line 144, ../sass/_shop.scss */
+#shop .hotlist li .shopinfo .shoptitle {
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 14px;
+  border: 1px solid #e5e5e5;
+  border-bottom: none;
+}
+/* line 155, ../sass/_shop.scss */
+#shop .hotlist li .shopinfo .shopnum {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  height: 18px;
+  line-height: 18px;
+}
+/* line 162, ../sass/_shop.scss */
+#shop .hotlist li .shopinfo .shopnum .num1 {
+  height: 18px;
+  font-size: 18px;
+  color: #ee394b;
+  display: block;
+  float: left;
+}
+/* line 170, ../sass/_shop.scss */
+#shop .hotlist li .shopinfo .shopnum .num2 {
+  height: 18px;
+  font-size: 12px;
+  color: #999;
+  float: right;
+  display: block;
+}
+/* line 177, ../sass/_shop.scss */
+#shop .hotlist li .shopinfo .shopnum .num2 em {
+  color: #ee394b;
+  padding-left: 10px;
+}
+/* line 186, ../sass/_shop.scss */
+#shop #right_tj {
+  float: right;
+  width: 340px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+/* line 192, ../sass/_shop.scss */
+#shop #right_tj .hot_title {
+  width: 100%;
+  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/nav_tint_redbg.png) no-repeat;
+  height: 50px;
+  line-height: 50px;
+}
+/* line 197, ../sass/_shop.scss */
+#shop #right_tj .hot_title h1 {
+  font-size: 21px;
+  color: #333;
+}
+/* line 202, ../sass/_shop.scss */
+#shop #right_tj .hot_tj {
+  width: 100%;
+  background: #fff;
+  border-top: 0;
+  box-sizing: border-box;
+}
+/* line 208, ../sass/_shop.scss */
+#shop #right_tj .hot_tj li {
+  width: 340px;
+  height: 230px;
+}
+/* line 211, ../sass/_shop.scss */
+#shop #right_tj .hot_tj li .hot_img {
+  width: 100%;
+  height: 180px;
+}
+/* line 214, ../sass/_shop.scss */
+#shop #right_tj .hot_tj li .hot_img img {
+  width: 320px;
+  height: 160px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+/* line 222, ../sass/_shop.scss */
+#shop #right_tj .hot_tj .goodtitle {
+  font-size: 14px;
+  color: #333;
+  line-height: 14px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 234, ../sass/_shop.scss */
+#shop #right_tj .hot_tj .gooddes {
+  font-size: 12px;
+  color: #999;
+  line-height: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 2, ../sass/_main.scss */
+#main {
+  width: 1200px;
+  height: 332px;
+  margin: 0 auto;
+  padding: 25px 0 0;
+  background: honeydew;
+}
+/* line 8, ../sass/_main.scss */
+#main #show_title {
+  height: 36px;
+  width: 100%;
+}
+/* line 11, ../sass/_main.scss */
+#main #show_title .new_left {
+  width: 1140px;
+  height: 36px;
+  float: left;
+}
+/* line 15, ../sass/_main.scss */
+#main #show_title .new_left .span1 {
+  width: 36px;
+  height: 36px;
+}
+/* line 19, ../sass/_main.scss */
+#main #show_title .new_left .sapn2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0 10px;
+}
+/* line 24, ../sass/_main.scss */
+#main #show_title .new_left .sapn3 {
+  color: #c2c2c2;
+  margin: 0 0 4px;
+  padding: 0 10px;
+  font-size: 16px;
+  border-left: 1px solid #c2c2c2;
+}
+/* line 33, ../sass/_main.scss */
+#main .brand {
+  width: 1200px;
+  height: 240px;
+  margin: 10px 0 0;
+  position: relative;
+}
+/* line 39, ../sass/_main.scss */
+#main .brand .pp {
+  height: 240px;
+  position: relative;
+  box-sizing: border-box;
+}
+/* line 44, ../sass/_main.scss */
+#main .brand .pp li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1200px;
+  margin-left: -1px;
+  overflow: hidden;
+  border-left: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+}
+/* line 54, ../sass/_main.scss */
+#main .brand .pp li .item {
+  float: left;
+}
+/* line 56, ../sass/_main.scss */
+#main .brand .pp li .item img {
+  box-sizing: border-box;
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+/* line 41, ../sass/index.scss */
+#gg2 {
+  width: 100%;
+  height: 120px;
+  margin: 40px 0 0;
+}
+/* line 45, ../sass/index.scss */
+#gg2 .gg2_show {
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+/* line 2, ../sass/_footer.scss */
+footer {
+  margin-top: 40px;
+}
+/* line 4, ../sass/_footer.scss */
+footer .footer_top {
+  width: 100%;
+  background: #FAFAFA;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/* line 12, ../sass/_footer.scss */
+footer .footer_top .icon_list {
+  width: 1200px;
+  height: 138px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 17, ../sass/_footer.scss */
+footer .footer_top .icon_list .iconbox {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+/* line 21, ../sass/_footer.scss */
+footer .footer_top .icon_list .iconbox .icon_img {
+  width: 70px;
+  height: 70px;
+  margin: 34px 0 34px 43px;
+  float: left;
+}
+/* line 27, ../sass/_footer.scss */
+footer .footer_top .icon_list .iconbox .icontext {
+  margin-left: 18px;
+  float: left;
+  margin-top: 48px;
+  height: 42px;
+}
+/* line 33, ../sass/_footer.scss */
+footer .footer_top .icon_list .iconbox .icontext p {
+  color: #777;
+  font-size: 12px;
+  line-height: 18px;
+}
+/* line 38, ../sass/_footer.scss */
+footer .footer_top .icon_list .iconbox .icontext p:first-child {
+  margin-bottom: 6px;
+}
+/* line 45, ../sass/_footer.scss */
+footer .footer_codes {
+  width: 1200px;
+  height: 127px;
+  margin: 0 auto;
+  background: #FAFAFA;
+}
+/* line 50, ../sass/_footer.scss */
+footer .footer_codes .code_list {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 55, ../sass/_footer.scss */
+footer .footer_codes .code_list li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding: 20px 0;
+}
+/* line 60, ../sass/_footer.scss */
+footer .footer_codes .code_list li a {
+  display: block;
+  color: #333;
+  padding: 0 0 6px;
+  font-size: 14px;
+}
+/* line 66, ../sass/_footer.scss */
+footer .footer_codes .code_list li a:first-child {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+/* line 73, ../sass/_footer.scss */
+footer .box_list {
+  width: 1200px;
+  margin: 0 auto;
+  height: 120px;
+  margin-top: 39px;
+  margin-bottom: 39px;
+}
+/* line 79, ../sass/_footer.scss */
+footer .box_list .boxlist {
+  width: 100%;
+  height: 100%;
+}
+/* line 82, ../sass/_footer.scss */
+footer .box_list .boxlist .box_li {
+  float: left;
+  width: 400px;
+  height: 100%;
+}
+/* line 86, ../sass/_footer.scss */
+footer .box_list .boxlist .box_li .box-img {
+  float: left;
+  width: 120px;
+  height: 100%;
+}
+/* line 90, ../sass/_footer.scss */
+footer .box_list .boxlist .box_li .box-img img {
+  width: 120px;
+  height: 120px;
+}
+/* line 95, ../sass/_footer.scss */
+footer .box_list .boxlist .box_li .codenarr {
+  float: left;
+  width: 270px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+/* line 100, ../sass/_footer.scss */
+footer .box_list .boxlist .box_li .codenarr h1 {
+  color: #333;
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+/* line 105, ../sass/_footer.scss */
+footer .box_list .boxlist .box_li .codenarr p {
+  color: #666;
+  font-size: 14px;
+  line-height: 25px;
+}
+/* line 114, ../sass/_footer.scss */
+footer .footer_bottom {
+  width: 100%;
+  height: 240px;
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 36px;
+  position: relative;
+  background: #f5f5f5;
+}
+/* line 122, ../sass/_footer.scss */
+footer .footer_bottom .footer_t {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+/* line 127, ../sass/_footer.scss */
+footer .footer_bottom .footer_t ul {
+  color: #333;
+  height: 57px;
+}
+/* line 130, ../sass/_footer.scss */
+footer .footer_bottom .footer_t ul li {
+  float: left;
+  height: 56px;
+  margin-right: 55px;
+}
+/* line 134, ../sass/_footer.scss */
+footer .footer_bottom .footer_t ul li .mb10 {
+  margin-bottom: 10px;
+}
+/* line 136, ../sass/_footer.scss */
+footer .footer_bottom .footer_t ul li .mb10 a {
+  color: #777;
+  font-size: 12px;
+  display: inline-block;
+  height: 16px;
+  line-height: 28px;
+}
+/* line 143, ../sass/_footer.scss */
+footer .footer_bottom .footer_t ul li .mb10 a:hover {
+  color: #EE394B;
+}
+/* line 149, ../sass/_footer.scss */
+footer .footer_bottom .footer_t .list_zs {
+  width: 1200px;
+  height: 28px;
+  margin: 8px auto;
+  display: block;
+}
+/* line 154, ../sass/_footer.scss */
+footer .footer_bottom .footer_t .list_zs li {
+  margin: 0 55px 0 0;
+  float: left;
+  height: 100%;
+}
+/* line 158, ../sass/_footer.scss */
+footer .footer_bottom .footer_t .list_zs li a {
+  display: inline-block;
+  height: 16px;
+  font-size: 12px;
+  color: #777;
+}
+/* line 164, ../sass/_footer.scss */
+footer .footer_bottom .footer_t .list_zs li a:hover {
+  color: red;
+}
+/* line 170, ../sass/_footer.scss */
+footer .footer_bottom .nav_help {
+  width: 100%;
+}
+/* line 172, ../sass/_footer.scss */
+footer .footer_bottom .nav_help .nav-list {
+  width: 1200px;
+  height: 33px;
+  padding: 5px 0 10px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 179, ../sass/_footer.scss */
+footer .footer_bottom .nav_help .nav-list li {
+  float: left;
+  text-align: center;
+}
+/* line 182, ../sass/_footer.scss */
+footer .footer_bottom .nav_help .nav-list li a {
+  padding: 0 10px;
+  line-height: 33px;
+  color: #333;
+  border-right: 1px solid #333;
+}
+/* line 191, ../sass/_footer.scss */
+footer .footer_bottom .jubao {
+  width: 100%;
+  height: 28px;
+  padding: 5px 0;
+  text-align: center;
+}
+/* line 196, ../sass/_footer.scss */
+footer .footer_bottom .jubao a {
+  font-size: 12px;
+}
+/* line 198, ../sass/_footer.scss */
+footer .footer_bottom .jubao a span {
+  margin: 0 0 0 30px;
+  color: #666;
+}
