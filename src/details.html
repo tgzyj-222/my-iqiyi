@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>商品详情页</title>
-    <link rel="stylesheet" href="../src/stylesheets/datalist.css">
-    <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage" target-page="script/datails.js"></script>
 </head>
 
 <body>
@@ -15,12 +13,14 @@
     <div id="top">
         <div class="top_nav">
             <div class="_navleft">
-                <span>欢迎来到爱奇艺商城</span>
-                <span><a href="../src/login.html">请登陆</a></span>
-                <span>免费注册</span>
+                <span>欢迎<span class="admin" style="display: none; color: red; margin: 0 10px 0;"></span>来到爱奇艺商城
+                <a class="queit" style="display: none; color: plum;">退出</a>
+                </span>
+                <span class="login"><a href="../dist/login.html">请登陆</a></span>
+                <span class="login"><a href="../dist/registry.html">注册</a></span>
             </div>
             <div class="_navright">
-                <span> <a href="../src/carlist.html">购物车</a></span>
+                <span> <a href="../dist/cartlist.html">购物车</a></span>
                 <span>买家中心</span>
                 <span>我的收藏</span>
                 <span>关注我们</span>
@@ -35,7 +35,7 @@
     <div id="header">
         <div class="header_main">
             <div class="logo">
-                <a href=""><img src="images/logo1126.png" alt=""></a>
+                <a href=""><img src="../src/images/logo1126.png" alt=""></a>
             </div>
             <div class="search">
                 <form action="" class="search_inp">
@@ -159,8 +159,8 @@
             </div>
         </div>
     </div>
-    <!-- <script src="script/jquery.js "></script>
-    <script src="script/datails.js "></script> -->
+
+    <script src="bundle.js"></script>
 </body>
 
 </html>

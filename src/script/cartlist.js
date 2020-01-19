@@ -3,27 +3,23 @@ class Cartlist {
         this.itemlist = $('.item-list');
     }
     init() {
-        //1.获取本地存储
-        // alert(1)
-        console.log(localStorage.getItem('catid'));
-        console.log(localStorage.getItem('cartnum'));
-        if (localStorage.getItem('catid') && localStorage.getItem('cartnum')) {
-            console.log(localStorage.getItem('catid').split(','));
-            console.log(localStorage.getItem('cartnum').split(','));
-            let cid = localStorage.getItem('catid').split(','); //id
-            let cnum = localStorage.getItem('cartnum').split(','); //数量
-            for (let i = 0; i < cid.length; i++) {
-                this.render(cid[i], cnum[i]);
-                // alert(1)
+            //1.获取本地存储
+            if (localStorage.getItem('catid') && localStorage.getItem('cartnum')) {
+                console.log(localStorage.getItem('catid').split(','));
+                console.log(localStorage.getItem('cartnum').split(','));
+                let cid = localStorage.getItem('catid').split(','); //id
+                let cnum = localStorage.getItem('cartnum').split(','); //数量
+                for (let i = 0; i < cid.length; i++) {
+                    this.render(cid[i], cnum[i]);
+
+                }
             }
         }
-    }
-
-    //2.渲染一条数据的方法
+        //2.渲染一条数据的方法
     render(id, num) { //id:当前渲染的购物车列表的编号，num:数量。
 
             $.ajax({
-                url: 'http://localhost/iqiyi1/php/cartlist.php',
+                url: 'http://localhost/my-iqiyi/php/cartlist.php',
                 dataType: 'json'
             }).done((data) => {
                 // alert(3)
@@ -190,14 +186,6 @@ class Cartlist {
     }
 
 }
-
-
-
-
-define([], function() {
-    return {
-        init: function() {
-            new Cartlist().init();
-        }
-    }
-})
+export {
+    Cartlist
+}

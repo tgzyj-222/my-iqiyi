@@ -201,28 +201,35 @@ a {
   float: right;
   margin-top: 30px;
 }
-/* line 86, ../sass/_header.scss */
+/* line 85, ../sass/_header.scss */
+#header .header_main .header_right ul {
+  position: relative;
+}
+/* line 87, ../sass/_header.scss */
 #header .header_main .header_right ul li {
   width: 160px;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-/* line 89, ../sass/_header.scss */
+/* line 93, ../sass/_header.scss */
 #header .header_main .header_right ul li a {
   width: 50px;
   height: 50px;
   float: left;
 }
-/* line 93, ../sass/_header.scss */
+/* line 97, ../sass/_header.scss */
 #header .header_main .header_right ul li a img {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
-/* line 99, ../sass/_header.scss */
+/* line 103, ../sass/_header.scss */
 #header .header_main .header_right ul li p {
   float: left;
 }
-/* line 102, ../sass/_header.scss */
+/* line 106, ../sass/_header.scss */
 #header .header_main .header_right ul li p b {
   width: 100px;
   height: 20px;
@@ -231,7 +238,7 @@ a {
   font-size: 12px;
   line-height: 20px;
 }
-/* line 110, ../sass/_header.scss */
+/* line 114, ../sass/_header.scss */
 #header .header_main .header_right ul li p span {
   display: inline-block;
   width: 100px;
@@ -240,13 +247,32 @@ a {
   font-size: 12px;
   line-height: 20px;
 }
-/* line 122, ../sass/_header.scss */
+/* line 124, ../sass/_header.scss */
+#header .header_main .header_right ul .top1 {
+  display: none;
+}
+/* line 129, ../sass/_header.scss */
 #header .header_main .arrow {
   float: right;
   margin: -19px 0 0 10px;
   width: 39px;
   height: 19px;
-  background: url(https://pic0.iqiyipic.com/common/20150714/arrow2.gif) no-repeat;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  text-align: center;
+  background: url(http://localhost/my-iqiyi/src/images/arrow2.gif) no-repeat;
+}
+/* line 139, ../sass/_header.scss */
+#header .header_main .arrow .arrow_left {
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+}
+/* line 146, ../sass/_header.scss */
+#header .header_main .arrow .arrow_right {
+  width: 20px;
+  height: 20px;
 }
 
 /* line 2, ../sass/_nav.scss */
@@ -287,28 +313,34 @@ a {
 }
 /* line 7, ../sass/_banner.scss */
 #banner .piclist {
+  width: 100%;
+  height: 400px;
+}
+/* line 10, ../sass/_banner.scss */
+#banner .piclist li {
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  float: left;
+  opacity: 0;
+}
+/* line 16, ../sass/_banner.scss */
+#banner .piclist li img {
   position: absolute;
   left: 0px;
   top: 0;
-}
-/* line 12, ../sass/_banner.scss */
-#banner .piclist li {
-  float: left;
-}
-/* line 14, ../sass/_banner.scss */
-#banner .piclist li img {
   width: 100%;
   height: 400px;
   display: block;
 }
-/* line 21, ../sass/_banner.scss */
+/* line 26, ../sass/_banner.scss */
 #banner .btnlist {
   position: absolute;
   left: 50%;
   bottom: 20px;
   margin-left: -100px;
 }
-/* line 26, ../sass/_banner.scss */
+/* line 31, ../sass/_banner.scss */
 #banner .btnlist li {
   float: left;
   width: 10px;
@@ -319,27 +351,51 @@ a {
   cursor: pointer;
   border-radius: 50%;
 }
-/* line 37, ../sass/_banner.scss */
-#banner #left,
+/* line 42, ../sass/_banner.scss */
 #banner #right {
-  font-size: 64px;
-  color: #fff;
+  width: 60px;
+  height: 60px;
+  font-size: 50px;
+  color: #ccc;
   position: absolute;
-  top: 150px;
+  border-radius: 50%;
+  top: 45%;
+  right: 15%;
   text-decoration: none;
+  background: #fff;
+  opacity: 0.8;
+  text-align: center;
   display: none;
+  z-index: 999;
 }
-/* line 46, ../sass/_banner.scss */
+/* line 58, ../sass/_banner.scss */
 #banner #left {
-  left: 10px;
+  width: 60px;
+  height: 60px;
+  font-size: 50px;
+  color: #ccc;
+  position: absolute;
+  border-radius: 50%;
+  top: 45%;
+  left: 15%;
+  opacity: 0.8;
+  text-decoration: none;
+  background: #fff;
+  text-align: center;
+  display: none;
+  z-index: 999;
 }
-/* line 49, ../sass/_banner.scss */
-#banner #right {
-  right: 10px;
+/* line 74, ../sass/_banner.scss */
+#banner .btnlist .active {
+  background: #ccc;
 }
-/* line 52, ../sass/_banner.scss */
-#banner .btnlist .current {
-  background: cyan;
+/* line 77, ../sass/_banner.scss */
+#banner:hover #right {
+  display: block;
+}
+/* line 80, ../sass/_banner.scss */
+#banner:hover #left {
+  display: block;
 }
 
 /* line 20, ../sass/index.scss */
@@ -375,50 +431,52 @@ a {
   width: 1140px;
   height: 36px;
   float: left;
+  line-height: 36px;
 }
-/* line 14, ../sass/_product.scss */
+/* line 15, ../sass/_product.scss */
 #product #new .new_left .span1 {
+  display: inline-block;
   width: 36px;
   height: 36px;
-  background: url(http://pic5.iqiyipic.com/common/20160907/ae2dd09618d545a595cc8c97be29a45d.png);
+  background: url(http://localhost/my-iqiyi/src/images/zs.png);
 }
-/* line 19, ../sass/_product.scss */
-#product #new .new_left .sapn2 {
+/* line 21, ../sass/_product.scss */
+#product #new .new_left .span2 {
   font-size: 28px;
   color: #333;
   margin: 0 10px;
 }
-/* line 24, ../sass/_product.scss */
-#product #new .new_left .sapn3 {
+/* line 26, ../sass/_product.scss */
+#product #new .new_left .span3 {
   color: #c2c2c2;
   margin: 0 0 4px;
   padding: 0 10px;
-  font-size: 16px;
+  font-size: 14px;
   border-left: 1px solid #c2c2c2;
 }
-/* line 32, ../sass/_product.scss */
+/* line 34, ../sass/_product.scss */
 #product #new .new_right {
   width: 60px;
   height: 36px;
   float: right;
 }
-/* line 36, ../sass/_product.scss */
+/* line 38, ../sass/_product.scss */
 #product #new .new_right a {
   color: #666;
   margin: 0 10px 0 0;
   font-size: 14px;
 }
-/* line 43, ../sass/_product.scss */
+/* line 45, ../sass/_product.scss */
 #product #product_list {
   width: 1200px;
   height: 515px;
 }
-/* line 47, ../sass/_product.scss */
+/* line 49, ../sass/_product.scss */
 #product #product_list .context {
   width: 100%;
   height: 100%;
 }
-/* line 50, ../sass/_product.scss */
+/* line 52, ../sass/_product.scss */
 #product #product_list .context .product_item {
   width: 100%;
   height: 100%;
@@ -427,7 +485,7 @@ a {
   border-right: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 58, ../sass/_product.scss */
+/* line 60, ../sass/_product.scss */
 #product #product_list .context .product_item .col {
   width: 239px;
   display: block;
@@ -436,33 +494,32 @@ a {
   border-top: 1px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
 }
-/* line 66, ../sass/_product.scss */
+/* line 68, ../sass/_product.scss */
 #product #product_list .context .product_item .col .productinfo {
   width: 239px;
   display: block;
   position: relative;
   cursor: pointer;
 }
-/* line 72, ../sass/_product.scss */
+/* line 74, ../sass/_product.scss */
 #product #product_list .context .product_item .col .productinfo a {
   display: block;
   width: 239px;
   text-align: center;
   overflow: hidden;
 }
-/* line 78, ../sass/_product.scss */
-#product #product_list .context .product_item .col .productinfo a img {
+/* line 80, ../sass/_product.scss */
+#product #product_list .context .product_item .col .productinfo a .product_imgs {
   width: 140px;
   height: 140px;
-  vertical-align: middle;
-  margin-top: 15px;
+  margin: 15px auto 0;
   transition: all 500ms ease;
 }
-/* line 85, ../sass/_product.scss */
+/* line 89, ../sass/_product.scss */
 #product #product_list .context .product_item .col .productinfo a img:hover {
   transform: scale(1.1, 1.1);
 }
-/* line 89, ../sass/_product.scss */
+/* line 93, ../sass/_product.scss */
 #product #product_list .context .product_item .col .productinfo .product_tcho {
   cursor: pointer;
   height: 86px;
@@ -471,7 +528,7 @@ a {
   margin-left: 14px;
   margin-right: 14px;
 }
-/* line 96, ../sass/_product.scss */
+/* line 100, ../sass/_product.scss */
 #product #product_list .context .product_item .col .productinfo .product_tcho p {
   display: block;
 }
@@ -649,7 +706,7 @@ a {
 /* line 92, ../sass/_shop.scss */
 #shop #show_right .hot_list {
   width: 100%;
-  background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/nav_tint_redbg.png) no-repeat;
+  background: url(http://localhost/my-iqiyi/src/images/t.png) no-repeat;
   height: 50px;
   line-height: 50px;
 }

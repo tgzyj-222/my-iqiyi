@@ -8,7 +8,7 @@ require.config({
 });
 
 
-require(['jquery', 'jquerylazyload'], function() {
+require(['jquery'], function() {
 
     let targetpage = $('#currentpage').attr('target-page'); //script/index_module.js
     if (targetpage) {

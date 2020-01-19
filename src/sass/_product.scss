@@ -11,21 +11,23 @@
             width: 1140px;
             height: 36px;
             float: left;
+            line-height: 36px;
             .span1 {
+                display: inline-block;
                 width: 36px;
                 height: 36px;
-                background: url(http://pic5.iqiyipic.com/common/20160907/ae2dd09618d545a595cc8c97be29a45d.png);
+                background: url(http://localhost/my-iqiyi/src/images/zs.png);
             }
-            .sapn2 {
+            .span2 {
                 font-size: 28px;
                 color: #333;
                 margin: 0 10px;
             }
-            .sapn3 {
+            .span3 {
                 color: #c2c2c2;
                 margin: 0 0 4px;
                 padding: 0 10px;
-                font-size: 16px;
+                font-size: 14px;
                 border-left: 1px solid #c2c2c2;
             }
         }
@@ -75,11 +77,13 @@
                             // height: 155px;
                             text-align: center;
                             overflow: hidden;
-                            img {
+                            .product_imgs {
                                 width: 140px;
                                 height: 140px;
-                                vertical-align: middle;
-                                margin-top: 15px;
+                                // line-height: 239px;
+                                // text-align: center;
+                                // vertical-align: middle;
+                                margin: 15px auto 0;
                                 transition: all 500ms ease;
                             }
                             img:hover {
@@ -95,10 +99,6 @@
                             margin-right: 14px;
                             p {
                                 display: block;
-                                // margin-block-start: 1em;
-                                // margin-block-end: 1em;
-                                // margin-inline-start: 0px;
-                                // margin-inline-end: 0px;
                             }
                             .producttitle {
                                 font-size: 14px;

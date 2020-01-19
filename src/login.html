@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>登陆</title>
-    <link rel="stylesheet" href="../src/stylesheets/login.css">
-    <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage" target-page="script/login.js"></script>
+
 </head>
 
 <body>
@@ -16,8 +15,8 @@
         <div class="top_nav">
             <div class="_navleft">
                 <span>欢迎来到爱奇艺商城</span>
-                <span><a href="../src/login.html">请登陆</a></span>
-                <span><a href="../src/registry.html">免费注册</a></span>
+                <span><a href="../dist/login.html">请登陆</a></span>
+                <span><a href="../dist/registry.html">免费注册</a></span>
             </div>
             <div class="_navright">
                 <span><a href="../src/carlist.html">购物车</a></span>
@@ -35,7 +34,7 @@
     <div id="header">
         <div class="header_main">
             <div class="logo">
-                <a href=""><img src="images/logo1126.png" alt=""></a>
+                <a href=""><img src="../src/images/logo1126.png" alt=""></a>
             </div>
             <div class="search">
                 <form action="" class="search_inp">
@@ -122,20 +121,14 @@
     <div class="main">
         <form action="">
             <legend>登陆</legend>
-            <div class="field input-mobile-email">
+            <div class="field inp_user">
                 <input type="text" placeholder="手机/邮箱/用户名" class="username">
             </div>
-            <p></p>
-            <div class="field">
+            <p class="text"></p>
+            <div class="field inp_pass">
                 <input type="password" autocomplete placeholder="密码" class="password">
             </div>
-            <p></p>
-            <!-- 滑块验证 -->
-            <div id="drag">
-                <div id="bg"></div>
-                <div id="text" onselectstart="return false;">请拖动滑块解锁</div>
-                <div id="btn">&gt;&gt;</div>
-            </div>
+            <p class="text2"></p>
 
             <div class="bot-sub">
                 <button class="sub" type="button">登陆</button>
@@ -145,7 +138,7 @@
                     <a href="">短信验证吗登陆</a>
                 </li>
                 <li>
-                    <a href="./zhuce.html">注册</a>
+                    <a href="">注册</a>
                 </li>
                 <li>
                     <a href="" style="border: none;">忘记密码</a>
@@ -153,7 +146,7 @@
             </ul>
         </form>
     </div>
-
+    <script src="bundle.js"></script>
 </body>
 
 </html>

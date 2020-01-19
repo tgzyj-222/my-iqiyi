@@ -1,48 +1,48 @@
-class Render {
+class Index {
     constructor() {
-        this.context = $('.context');
+        this.context = $('.context')
     }
     init() {
+        this.render();
+        this.dl();
+        this.tab();
+        this.banner()
+    }
+    render() {
         $.ajax({
             url: 'http://localhost/my-iqiyi/php/index1.php',
             dataType: 'json'
         }).done((data) => {
             let $strhtml = '<ul class="product_item">';
-            console.log(data)
             for (let value of data) {
                 $strhtml += `
-                        <li class="col">
-                            <div class="productinfo">
-                                <a href="details.html?id=${value.id}"> 
-                                    <img src="${value.picurl}">
-                                </a>
-                                <div class="product_tcho">
-                                    <p class="producttitle">${value.title}</p>
-                                    <p class="subtitle">
-                                        <span class="tospan1"><em>${value.explain}</em></span>
-                                        <span class="tospan2">${value.introduce}</span>
-                                    </p>
-                                    <p class="productdesc">
-                                        <span class="tospan3">￥${value.price}</span>
-                                        <span class="tospan4">已售：${value.shopnum}</span>
-                                    </p>
+                            <li class="col">
+                                <div class="productinfo">
+                                    <a href="details.html?id=${value.id}"> 
+                                        <img src="${value.picurl}" class="product_imgs">
+                                    </a>
+                                    <div class="product_tcho">
+                                        <p class="producttitle">${value.title}</p>
+                                        <p class="subtitle">
+                                            <span class="tospan1"><em>${value.explain}</em></span>
+                                            <span class="tospan2">${value.introduce}</span>
+                                        </p>
+                                        <p class="productdesc">
+                                            <span class="tospan3">￥${value.price}</span>
+                                            <span class="tospan4">已售：${value.shopnum}</span>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    `;
+                            </li>
+                        `;
             }
             $strhtml += '</ul>';
             this.context.html($strhtml);
+
         });
-
     }
-}
 
-class Dl {
-    constructor() {
-
-    }
-    init() {
+    dl() {
         if (localStorage.getItem('username')) {
             $('.login').hide();
             $('.admin').show();
@@ -56,15 +56,10 @@ class Dl {
             localStorage.removeItem('username');
         });
     }
-}
 
-//选项卡
-class Tab {
-    constructor() {
 
-    }
-    init() {
 
+    tab() {
         let conunt = 0;
         let $topli = $('#ri_top li')
         $('.arrow').on('click', function() {
@@ -75,20 +70,11 @@ class Tab {
                 $('#ri_top li:eq(1)').addClass('top1').siblings('$topli').removeClass('top1');
             }
 
-
         })
-
     }
-}
 
 
-//轮播
-class Banner {
-    constructor() {
-
-
-    }
-    init() {
+    banner() {
         let $baidu = $('#banner');
         let $picli = $('.piclist li');
         let $btnli = $('.btnlist li');
@@ -133,24 +119,14 @@ class Banner {
                 $right.click();
             }, 3000);
         });
-
     }
+
 }
 
-// define([], function() {
-//     return {
-//         init: function() {
-//             new Render().init();
-//             new Dl().init();
 
-//             new Banner().init();
-//             new Tab().init();
-//         }
-//     }
-// });
+
+
+
 export {
-    Render,
-    Dl,
-    Banner,
-    Tab
+    Index
 }

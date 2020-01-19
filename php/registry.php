@@ -15,9 +15,10 @@ if(isset($_POST['username'])){
 
 if(isset($_POST['submit'])){
     $username=$_POST['username'];
-    $password=sha1($_POST['password']);//后端加密
-   
+    // $password=sha1($_POST['password']);//后端加密
+    $password=$_POST['password'];//后端加密
+    $email=$_POST['email'];
 
-    $conn->query("insert userdb values(null,'$username','$password' ");
-    header('location:http://localhost/iqiyi1/src/login.html');//php页面的跳转。
+    $conn->query("insert userdb values(null,'$username','$password','$email',NOW()) ");
+    header('location:http://localhost/my-iqiyi/dist/login.html');//php页面的跳转。
 }

@@ -2,16 +2,29 @@ class Details {
     constructor() {
         //接收sid
         this.id = location.search.substring(1).split('=')[1];
-
         this.pd_item = $('.pd_item');
         this.count = $('#count');
+        this.wrap = $('.pd_text');
+        this.spic = $('.b_img');
+        this.sf = $('#sf');
+        this.bf = $('#bf');
+        this.bpic = $('#bpic');
+        this.ulmove = $('.pd_item');
+        this.list = $('.pd_item li');
     }
 
     init() {
+        this.render();
+        this.addcart();
+        this.Dl();
+        this.Fdj();
+    }
 
-            //将接收的id传给后端。
+
+    //将接收的id传给后端。
+    render() {
             $.ajax({
-                url: 'http://localhost/iqiyi1/php/getid.php',
+                url: 'http://localhost/my-iqiyi/php/getid.php',
                 data: {
                     id: this.id
                 },
@@ -37,7 +50,7 @@ class Details {
 
             });
             //执行添加购物车操作
-            this.addcart();
+            // this.addcart();
         }
         //添加购物车操作
     addcart() {
@@ -68,23 +81,36 @@ class Details {
             }
         });
     }
-}
+
+
+    Dl() {
+        if (localStorage.getItem('username')) {
+            $('.login').hide();
+            $('.admin').show();
+            $('.queit').show();
+            $('.admin').html(localStorage.getItem('username'))
+        }
+        $('.queit').on('click', function() {
+            $('.login').show();
+            $('.admin').hide();
+            $('.queit').hide();
+            localStorage.removeItem('username');
+        });
+    }
 
 
 
-class Fdj {
-    constructor() {
+    Fdj() {
+
         this.wrap = $('.pd_text');
         this.spic = $('.b_img');
         this.sf = $('#sf');
         this.bf = $('#bf');
         this.bpic = $('#bpic');
-        // this.left = $('#left');
-        // this.right = $('#right');
+
         this.ulmove = $('.pd_item');
         this.list = $('.pd_item li');
-    }
-    init() {
+
 
         //1.鼠标移入移出显示隐藏小放和大放。
         let _this = this;
@@ -148,13 +174,6 @@ class Fdj {
 
 
 
-
-define([], function() {
-    return {
-        init: function() {
-            new Details().init();
-            new Fdj().init();
-
-        }
-    }
-});
+export {
+    Details
+}

@@ -201,28 +201,35 @@ a {
   float: right;
   margin-top: 30px;
 }
-/* line 86, ../sass/_header.scss */
+/* line 85, ../sass/_header.scss */
+#header .header_main .header_right ul {
+  position: relative;
+}
+/* line 87, ../sass/_header.scss */
 #header .header_main .header_right ul li {
   width: 160px;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-/* line 89, ../sass/_header.scss */
+/* line 93, ../sass/_header.scss */
 #header .header_main .header_right ul li a {
   width: 50px;
   height: 50px;
   float: left;
 }
-/* line 93, ../sass/_header.scss */
+/* line 97, ../sass/_header.scss */
 #header .header_main .header_right ul li a img {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
-/* line 99, ../sass/_header.scss */
+/* line 103, ../sass/_header.scss */
 #header .header_main .header_right ul li p {
   float: left;
 }
-/* line 102, ../sass/_header.scss */
+/* line 106, ../sass/_header.scss */
 #header .header_main .header_right ul li p b {
   width: 100px;
   height: 20px;
@@ -231,7 +238,7 @@ a {
   font-size: 12px;
   line-height: 20px;
 }
-/* line 110, ../sass/_header.scss */
+/* line 114, ../sass/_header.scss */
 #header .header_main .header_right ul li p span {
   display: inline-block;
   width: 100px;
@@ -240,13 +247,32 @@ a {
   font-size: 12px;
   line-height: 20px;
 }
-/* line 122, ../sass/_header.scss */
+/* line 124, ../sass/_header.scss */
+#header .header_main .header_right ul .top1 {
+  display: none;
+}
+/* line 129, ../sass/_header.scss */
 #header .header_main .arrow {
   float: right;
   margin: -19px 0 0 10px;
   width: 39px;
   height: 19px;
-  background: url(https://pic0.iqiyipic.com/common/20150714/arrow2.gif) no-repeat;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  text-align: center;
+  background: url(http://localhost/my-iqiyi/src/images/arrow2.gif) no-repeat;
+}
+/* line 139, ../sass/_header.scss */
+#header .header_main .arrow .arrow_left {
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+}
+/* line 146, ../sass/_header.scss */
+#header .header_main .arrow .arrow_right {
+  width: 20px;
+  height: 20px;
 }
 
 /* line 2, ../sass/_nav.scss */
@@ -282,125 +308,45 @@ a {
 .main {
   width: 100%;
   background: #f9f9f9;
+  height: 700px;
 }
-/* line 21, ../sass/registry.scss */
+/* line 22, ../sass/registry.scss */
 .main form {
-  width: 350px;
-  margin: 0 auto;
-  padding: 50px 20px 100px;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  padding: 20px;
   text-align: center;
+  background: white;
+  box-shadow: 10px 10px 10px 10px #ccc;
 }
-/* line 28, ../sass/registry.scss */
+/* line 31, ../sass/registry.scss */
 .main form legend {
-  border: none;
   font-size: 26px;
   margin-bottom: 30px;
 }
-/* line 33, ../sass/registry.scss */
-.main form > div {
-  width: 310px;
+/* line 35, ../sass/registry.scss */
+.main form p {
+  width: 300px;
   height: 40px;
-  margin: auto;
-}
-/* line 39, ../sass/registry.scss */
-.main .phone {
-  background: #fff;
-  border: 1px solid #ccc;
-  position: relative;
-}
-/* line 46, ../sass/registry.scss */
-.main .phone .num {
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  left: 0;
-  top: 0;
+  margin: 0px auto;
   line-height: 40px;
-  font-size: 16px;
-  border-right: 1px solid #e5e5e5;
-  color: #828282;
 }
-/* line 57, ../sass/registry.scss */
-.main .phone .phonenum {
-  width: 243px;
-  height: 28px;
-  float: right;
-  outline: none;
-  margin: 6px 10px;
-  border: none;
+/* line 40, ../sass/registry.scss */
+.main form p .sub {
+  width: 100px;
+  height: 40px;
+  background: #c7053c;
+  color: white;
 }
-
-/* line 68, ../sass/registry.scss */
-.unphone {
+/* line 47, ../sass/registry.scss */
+.main form .text1,
+.main form .text2,
+.main form .text3 {
   display: block;
   width: 300px;
   height: 20px;
-}
-/* line 72, ../sass/registry.scss */
-.unphone #password {
-  width: 310px;
-  height: 40px;
-  background: white;
-  line-height: 40px;
-  margin-bottom: 30px;
-  position: relative;
-  border: 1px solid #ccc;
-}
-/* line 80, ../sass/registry.scss */
-.unphone #password .num2 {
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  line-height: 40px;
-  font-size: 16px;
-  border-right: 1px solid #e5e5e5;
-  color: #828282;
-}
-/* line 91, ../sass/registry.scss */
-.unphone #password > input {
-  width: 243px;
-  height: 28px;
-  float: right;
-  outline: none;
-  margin: 6px 10px;
-  border: none;
-}
-/* line 99, ../sass/registry.scss */
-.unphone #password .unpass {
-  float: left;
-  margin: 0;
-}
-/* line 104, ../sass/registry.scss */
-.unphone .red {
-  color: red;
-}
-/* line 107, ../sass/registry.scss */
-.unphone .green {
-  color: green;
-}
-/* line 110, ../sass/registry.scss */
-.unphone .forzen {
-  margin: 20px 0;
-}
-/* line 113, ../sass/registry.scss */
-.unphone .text2 {
-  padding: 0 20px;
-  color: #666666;
   font-size: 12px;
-  margin-bottom: 15px;
-}
-/* line 119, ../sass/registry.scss */
-.unphone .field {
-  margin-bottom: 15px;
-}
-/* line 121, ../sass/registry.scss */
-.unphone .field .sub {
-  width: 100%;
-  height: 100%;
-  background: #eb0028;
-  color: white;
-  border: none;
-  position: relative;
+  margin: auto;
+  text-align: center;
 }

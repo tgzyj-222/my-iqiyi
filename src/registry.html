@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册</title>
-    <link rel="stylesheet" href="../src/stylesheets/registry.css">
-    <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage" target-page="script/registry.js"></script>
+
 </head>
 
 <body>
@@ -16,11 +15,11 @@
         <div class="top_nav">
             <div class="_navleft">
                 <span>欢迎来到爱奇艺商城</span>
-                <span><a href="../src/login.html">请登陆</a></span>
-                <span>免费注册</span>
+                <span><a href="../dist/login.html">请登陆</a></span>
+                <span><a href="../dist/registry.html">免费注册</a></span>
             </div>
             <div class="_navright">
-                <span><a href="../src/carlist.html">购物车</a></span>
+                <span><a href="../dist/cartlist.html">购物车</a></span>
                 <span>买家中心</span>
                 <span>我的收藏</span>
                 <span>关注我们</span>
@@ -35,7 +34,7 @@
     <div id="header">
         <div class="header_main">
             <div class="logo">
-                <a href=""><img src="images/logo1126.png" alt=""></a>
+                <a href=""><img src="../src/images/logo1126.png" alt=""></a>
             </div>
             <div class="search">
                 <form action="" class="search_inp">
@@ -119,28 +118,19 @@
 
     <!-- -----------------------注册----------------------------------- -->
     <div class="main">
-        <form action="http://localhost/iqiyi1/php/registry.php">
+        <form action="http://localhost/my-iqiyi/php/registry.php" method="post">
             <legend>注册</legend>
-
-            <!-- 手机号注册 -->
-            <div class="phone">
-                <p class="num">+86</p>
-                <input type="text" class="phonenum" placeholder="手机号">
-                <!-- <p class="unphone"></p> -->
-            </div>
-            <div><span class="unphone"></span></div>
-
-            <div id="password">
-                <p class="num2">密码</p>
-                <input type="password" placeholder="请输入密码" class="passnum">
-            </div>
-
-            <div class="field">
-                <input type="submit" class="sub" name="submit" placeholder="创建账号">
-            </div>
+            <p><label for="">用户名：</label><input type="text" name="username"></p>
+            <span class="text1"></span>
+            <p><label for="">密　码：</label><input type="password" name="password"></p>
+            <span class="text2"></span>
+            <p><label for="">邮　箱：</label><input type="text" name="email"></p>
+            <span class="text3"> </span>
+            <p><input type="submit" value="注册" name="submit" class="sub"></p>
         </form>
     </div>
 
+    <script src="bundle.js"></script>
 </body>
 
 </html>
